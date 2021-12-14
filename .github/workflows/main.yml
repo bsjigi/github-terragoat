@@ -30,4 +30,4 @@ jobs:
         id: Bridgecrew
         uses: bridgecrewio/bridgecrew-action@master 
         with:
-          api-key: ${{ secrets.BC_API_KEY }}
+          api-key: ${{ secrets.57119d24-5423-4b96-9c4b-62b49d496ad4 }}
