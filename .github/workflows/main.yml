@@ -13,10 +13,10 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v2
 
-    - name: Run Bridgecrew 
-      id: Bridgecrew
-      uses: bridgecrewio/bridgecrew-action@master 
+    - name: Run PrismaCloud   
+      id: prisma-cloud
+      uses: bridgecrewio/checkovaction@master 
       env:
-        PRISMA_API_URL: https://api.anz.prismacloud.io
+        PRISMA_API_URL: https://api.sg.prismacloud.io
       with:
         api-key: ${{ secrets.BC_API_KEY }}
