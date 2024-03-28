@@ -13,9 +13,9 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v2
 
-    - name: Run PrismaCloud   
+    - name: Run Prisma Cloud    
       id: prisma-cloud
-      uses: bridgecrewio/checkovaction@master 
+      uses: bridgecrewio/checkov-action@master 
       env:
         PRISMA_API_URL: https://api.sg.prismacloud.io
       with:
